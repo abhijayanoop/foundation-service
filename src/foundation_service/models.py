@@ -1,7 +1,9 @@
-from pydantic import BaseModel, Field, field_validator, model_validator
+from datetime import datetime
 from enum import Enum
 from typing import Literal
-from datetime import datetime
+
+from pydantic import BaseModel, Field, field_validator, model_validator
+
 
 class JobStatus(str, Enum):
     QUEUED = "queued"
